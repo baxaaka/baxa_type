@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body {
+  background-color: black;
+  background-color: #faedcd;
+  color: #fefae0;
+}
+.main {
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+}
+.header {
+  width: 100%;
+  background-color: #faedcd;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+.head {
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: absolute;
+  left: 50px;
+}
+
+.head span {
+  color: black;
+}
+
+.head img {
+  width: 60px;
+}
+.box {
+  width: 500px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+}
+input {
+  display: block;
+  position: relative;
+  top: 100px;
+  width: 500px;
+  height: 40px;
+  border-radius: 15px;
+  outline: none;
+  border: #000000 3px solid;
+  text-align: center;
+  font-size: 25px;
+  background-color: #fefae0;
+  margin: 0 auto;
+}
+
+.words {
+  width: 500px;
+  height: 40px;
+
+  text-align: center;
+  transition: all 1s ease;
+}
+
+.time {
+  color: #d4a373;
+}
+.words .texind {
+  width: 500px;
+  height: 40px;
+
+  text-align: center;
+  font-size: 30px;
+  transition: all 1s ease;
+  color: #fefae0;
+  color: black;
+
+  letter-spacing: 5px;
+}
+.words .score {
+  width: 150px;
+
+  position: absolute;
+  right: 700px;
+  bottom: 300px;
+  background-color: #d4a373;
+}
+.words .storage {
+  width: 150px;
+
+  position: absolute;
+  right: 700px;
+  bottom: 250px;
+  background-color: #d4a373;
+}
+
+/* modals */
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: #fefae0;
+  z-index: 9;
+}
+.modalBox {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color:#d4a373;
+  border-radius: 10px;
+
+}
+
+.settings {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: #fefae0;
+  z-index: 9;
+  display: none;
+  transition: 1s all ease;
+}
+
+.settingsBox{
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+ 
+  background-color:#d4a373;
+  border-radius: 10px;
+  position: relative;
+  left: 30px;
+  transition: 1s all ease;
+
+
+}
+
+
+.audios {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: #fefae0;
+  z-index: 9;
+  display: none;
+  transition: 1s all ease;
+}
+
+.audioBox{
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color:#d4a373;
+  border-radius: 10px;
+  /* position: relative;
+  left: 30px; */
+  transition: 1s all ease;
+
+
+}
+
+.gameOver {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: #fefae0;
+  z-index: 9;
+  display: none;
+}
+.gameOverBox {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.startBtn {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-size: 24px;
+  background-color: #faedcd;
+  color: #251f1f;
+  border: #000000 3px solid;
+  transition: 0.5s ease all;
+}
+
+.startBtn:hover {
+  width: 425px;
+  letter-spacing: 5px;
+}
+
+.authorBtn {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-size: 24px;
+  background-color: #faedcd;
+  color: #251f1f;
+  border: #000000 3px solid;
+  transition: 0.5s ease all;
+}
+
+.authorBtn:hover {
+  width: 425px;
+  letter-spacing: 5px;
+}
+
+.closeBtn {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-size: 24px;
+  background-color: #faedcd;
+  color: #251f1f;
+  border: #000000 3px solid;
+  transition: 0.5s ease all;
+}
+
+.closeBtn:hover {
+  width: 425px;
+  letter-spacing: 5px;
+}
+
+.overBtn {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-size: 24px;
+  background-color: #faedcd;
+  color: #251f1f;
+  border: #000000 3px solid;
+  transition: 0.5s ease all;
+  z-index: 99;
+}
+
+.overBtn:hover {
+  width: 425px;
+  letter-spacing: 5px;
+}
+
+.gameOverBox span {
+  position: relative;
+  bottom: 150px;
+  color: black;
+}
+
+
+.settingsBtn {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-size: 24px;
+  background-color: #faedcd;
+  color: #251f1f;
+  border: #000000 3px solid;
+  transition: 0.5s ease all;
+  z-index: 99;
+}
+
+.settingsBtn:hover {
+  width: 425px;
+  letter-spacing: 5px;
+}
+
+
+.audioBtn {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-size: 24px;
+  background-color: #faedcd;
+  color: #251f1f;
+  border: #000000 3px solid;
+  transition: 0.5s ease all;
+  z-index: 99;
+}
+
+.audioBtn:hover {
+  width: 425px;
+  letter-spacing: 5px;
+}
+
+
+.exitBtn {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-size: 24px;
+  background-color: #faedcd;
+  color: #251f1f;
+  border: #000000 3px solid;
+  transition: 0.5s ease all;
+}
+
+.exitBtn:hover {
+  width: 425px;
+  letter-spacing: 5px;
+}
+
+
+.exitBtn2 {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-size: 24px;
+  background-color: #faedcd;
+  color: #251f1f;
+  border: #000000 3px solid;
+  transition: 0.5s ease all;
+}
+
+.exitBtn2:hover {
+  width: 425px;
+  letter-spacing: 5px;
+}
+
+.key1 {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-size: 24px;
+  background-color: #faedcd;
+  color: #251f1f;
+  border: #000000 3px solid;
+  transition: 0.5s ease all;
+}
+
+.key1:hover {
+  width: 425px;
+  letter-spacing: 5px;
+}
+.key2 {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-size: 24px;
+  background-color: #faedcd;
+  color: #251f1f;
+  border: #000000 3px solid;
+  transition: 0.5s ease all;
+}
+
+.key2:hover {
+  width: 425px;
+  letter-spacing: 5px;
+}
+
+.key3 {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-size: 24px;
+  background-color: #faedcd;
+  color: #251f1f;
+  border: #000000 3px solid;
+  transition: 0.5s ease all;
+}
+
+.key3:hover {
+  width: 425px;
+  letter-spacing: 5px;
+}
+.key4 {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-size: 24px;
+  background-color: #faedcd;
+  color: #251f1f;
+  border: #000000 3px solid;
+  transition: 0.5s ease all;
+}
+
+.key4:hover {
+  width: 425px;
+  letter-spacing: 5px;
+}
