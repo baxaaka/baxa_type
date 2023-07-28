@@ -304,17 +304,7 @@ key2.addEventListener("click", () => {
   isClicked2 = true;
   clickAudio()
 });
-key3.addEventListener("click", () => {
-  clickAudio()
-  const p =prompt('kalit soz')
-  if(p=='pescha'){
-  isClicked3 = true;
-    
-  }else{
-    alert("xato")
-  }
 
-});
 
 key4.addEventListener("click", () => {
   isClicked4 = true;
